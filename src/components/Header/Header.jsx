@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import ToggleIcon from '../../assets/icons/toggle_icon.png'
-import './Header.css';
+import TitleLogo from '../../assets/icons/dev-logo.png'
 
 function Header() {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -12,18 +12,27 @@ function Header() {
 
     return (
         <header id="header" className="header">
+            <div className="title">
+                <div className="title__img">
+                    <img src={TitleLogo} alt="Logo développeur web rouge et blanc" />
+                </div>
+                <div className="title__text">
+                    <h1>Pierre Fasce</h1>
+                    <p>Web developer</p>
+                </div>
+            </div>
             <nav className="navbar">
-                <div className="container">
+                <div className="navbar__container">
                     <div className="ham-menu" onClick={ handleShowNavbar }>
                         <img src={ToggleIcon} alt="menu format mobile" />
                     </div>
-                    <div className={ `nav-elements ${ showNavbar && 'active'}` }>
+                    <div className={ `navbar__elements ${ showNavbar && 'active'}` }>
                         <ul>
                             <li>
-                                <NavLink to="/">Accueil</NavLink>
+                                <NavLink to="/" onClick={handleShowNavbar}>Accueil</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact">Contact</NavLink>
+                                <NavLink to="/contact" onClick={handleShowNavbar}>Contact</NavLink>
                             </li>
                         </ul>
                     </div>

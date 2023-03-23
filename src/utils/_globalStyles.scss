@@ -1,0 +1,115 @@
+/*colors*/
+
+$primary: #1aa6b7;
+$secondary: #002d40;
+$tertiary: #d9ecf2;
+$quaternary: #e04f5f;
+
+
+/*mixins*/
+@mixin bg-gradient-darkblue {
+    background: linear-gradient(to top left, $primary, $secondary);
+}
+
+@mixin bg-gradient-darkblue--reverse {
+    background: linear-gradient(to top left, $secondary, $primary);
+}
+
+@mixin bg-gradient-lightblue {
+    background: linear-gradient(to top left, #1aa6b7aa, #d9ecf2aa);
+}
+
+@mixin bg-gradient-lightblue-op100 {
+    background: linear-gradient(to top left, #1aa6b7, #d9ecf2);
+}
+
+@mixin bg-gradient-red {
+    background: linear-gradient(to top left, #8a2824, $quaternary);
+}
+
+@mixin primary-border {
+    border: 1px solid $primary;
+}
+
+@mixin secondary-border {
+    border: 1px solid $secondary;
+}
+
+@mixin flex-center--all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-center--height {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-col-center--all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bs-darkblue {
+    box-shadow: 5px 5px 8px $secondary;
+}
+
+@mixin tx-darkblue {
+    text-shadow: 3px 3px 5px $secondary;
+}
+
+@mixin inset {
+    position: absolute;
+    top: -51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border: 2px solid $quaternary;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px $quaternary;
+}
+
+
+/*breakpoints*/
+
+$breakpoint-l : "screen and (max-width: 1450px)";
+$breakpoint-m : "screen and  (max-width: 1280px)";
+$breakpoint-s : "screen and (max-width: 798px)";
+$breakpoint-xs : "screen and (max-width: 480px)";
+
+
+/*general*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: $secondary;
+}
+
+main {
+    padding: 100px 0;
+}
+
+.section {
+    padding: 50px 30px 30px 30px;
+}

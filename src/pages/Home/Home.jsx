@@ -1,24 +1,18 @@
-import logo from '../../logo.svg';
-import "./Home.css";
+import WelcomeSection from "../../components/WelcomeSection/WelcomeSection";
 
 function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Home/Home.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main id='home' className='main'>
+      {/* welcome section */}
+      <WelcomeSection/>
+
+      {/* projects section */}
+      
+
+      {/* career section */}
+      
+
+    </main>
   );
 }
 

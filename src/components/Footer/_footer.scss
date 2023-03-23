@@ -1,0 +1,28 @@
+.footer {
+    padding: 20px;
+    color: $tertiary;
+    font-size: 16px;
+
+    @include flex-col-center--all;
+    @include bg-gradient-darkblue--reverse;
+
+    &__links {
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        margin: 0 20px;
+        color: $tertiary;
+        font-size: 30px;
+        transition: transform 600ms;
+
+        &:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(3px 3px 5px $secondary);
+        }
+    }
+
+    & p {
+        font-size: 14px;
+    }
+}

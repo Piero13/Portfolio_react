@@ -1,0 +1,11 @@
+/*global styles*/
+@import "./utils/globalStyles";
+
+/*components*/
+@import "./components/Header/header";
+@import "./components/Footer/footer";
+@import "./components/WelcomeSection/welcomeSection";
+
+/*pages*/
+@import "./pages/Contact/contact";
+@import "./pages/Home/home";
