@@ -1,17 +1,8 @@
 .welcome {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     color: $secondary;
     text-align: center;
-
-    @include bg-gradient-lightblue;
-    @include secondary-border;
 
     &__inset {
         @include inset;
@@ -42,6 +33,12 @@
             top: -41px;
             width: 80px;
             height: 80px;
+        }
+
+        &__content {
+            &__title {
+                font-size: 16px;
+            }
         }
     }
 }
