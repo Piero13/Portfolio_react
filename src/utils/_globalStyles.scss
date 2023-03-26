@@ -16,7 +16,7 @@ $quaternary: #e04f5f;
 }
 
 @mixin bg-gradient-lightblue {
-    background: linear-gradient(to top left, #1aa6b7aa, #d9ecf2aa);
+    background: linear-gradient(to top left, #1aa6b7cc, #d9ecf2cc);
 }
 
 @mixin bg-gradient-lightblue-op100 {
@@ -64,13 +64,13 @@ $quaternary: #e04f5f;
 
 @mixin inset {
     position: absolute;
-    top: -51px;
+    top: -61px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: 2px solid $quaternary;
     border-radius: 50%;
     box-shadow: 3px 3px 10px $quaternary;
@@ -108,8 +108,28 @@ p {
 
 main {
     padding: 100px 0;
+    width: 100%;
+    background: center / cover no-repeat fixed url("../assets/pictures/site-bg.jpg");
 }
 
 .section {
-    padding: 50px 30px 30px 30px;
+    padding: 80px 30px 30px 30px;
+    @include bs-darkblue();
+}
+
+
+/*responsive*/
+
+@media #{$breakpoint-s} {
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 80px 0;
+    }
 }

@@ -25,7 +25,7 @@
 
     &__text {
         & h1 {
-            font-size: 20px;
+            font-size: 22px;
             color: $tertiary;
         }
 
@@ -111,6 +111,18 @@
 
 /*mobile*/
 @media #{$breakpoint-s} {
+    .title {
+        &__text {
+            & h1 {
+                font-size: 20px;
+            }
+
+            & p {
+                font-size: 12px;
+            }
+        }
+    }
+
     .navbar {
         & .ham-menu {
             display: block;
@@ -121,6 +133,7 @@
 
         &__elements {
             position: absolute;
+            z-index: 5;
             right: 0;
             top: 75px;
             background-color: $secondary;

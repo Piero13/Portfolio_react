@@ -23,6 +23,19 @@
     }
 
     & p {
+        color: $tertiary;
         font-size: 14px;
+    }
+}
+
+
+/*responsive*/
+
+/*mobile*/
+@media #{$breakpoint-s} {
+    .footer {
+        & p{
+            font-size: 12px;
+        }
     }
 }
