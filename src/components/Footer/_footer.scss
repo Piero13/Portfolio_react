@@ -2,7 +2,6 @@
     padding: 20px;
     color: $tertiary;
     font-size: 16px;
-
     @include flex-col-center--all;
     @include bg-gradient-darkblue--reverse;
 
@@ -30,7 +29,6 @@
 
 
 /*responsive*/
-
 /*mobile*/
 @media #{$breakpoint-s} {
     .footer {

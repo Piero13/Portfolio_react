@@ -1,0 +1,22 @@
+.slider {
+    width: 100%;
+    height: auto;
+    padding: 30px 50px 50px 50px;
+}
+
+#swiper {
+    height: 100%;
+}
+
+.sliderImg {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $quaternary;
+}
+
+.swiper-pagination-bullet-active {
+    background: $quaternary;
+}

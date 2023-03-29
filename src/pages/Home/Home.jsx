@@ -1,5 +1,5 @@
 import WelcomeSection from "../../components/WelcomeSection/WelcomeSection";
-import PageSection from "../../components/PageSection/PageSection";
+import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 
 function Home() {
   return (
@@ -8,14 +8,10 @@ function Home() {
       <WelcomeSection/>
 
       {/* projects section */}
-      <PageSection title={"Projets"}>
-
-      </PageSection>
+      <ProjectsSection title={"Projets"}/>
 
       {/* career section */}
-      <PageSection title={"Parcours"}>
-        
-      </PageSection>
+
 
     </main>
   );
