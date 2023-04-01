@@ -29,10 +29,16 @@ function Header() {
                     <div className={ `navbar__elements ${ showNavbar && 'active'}` }>
                         <ul>
                             <li>
-                                <NavLink to="/" onClick={handleShowNavbar}>Accueil</NavLink>
+                                <NavLink to="/" onClick={handleShowNavbar} className="link">Accueil</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" onClick={handleShowNavbar}>Contact</NavLink>
+                                <NavLink to="/projects" onClick={handleShowNavbar} className="link">Projets</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/career" onClick={handleShowNavbar} className="link">Parcours</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/contact" onClick={handleShowNavbar} className="link">Contact</NavLink>
                             </li>
                         </ul>
                     </div>

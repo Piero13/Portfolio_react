@@ -5,9 +5,10 @@
 @import "./components/Header/header";
 @import "./components/Footer/footer";
 @import "./components/WelcomeSection/welcomeSection";
-@import "./components/ProjectsSection/projectsSection";
 @import "./components/Slider/slider";
+@import "./components/CareerElement/careerElement";
 
 /*pages*/
 @import "./pages/Contact/contact";
 @import "./pages/Home/home";
+@import "./pages/Projects/projects";

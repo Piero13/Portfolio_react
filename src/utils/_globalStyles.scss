@@ -1,5 +1,4 @@
 /*colors*/
-
 $primary: #1aa6b7;
 $secondary: #002d40;
 $tertiary: #d9ecf2;
@@ -74,6 +73,7 @@ $quaternary: #e04f5f;
     border: 2px solid $quaternary;
     border-radius: 50%;
     box-shadow: 3px 3px 10px $quaternary;
+    color: $tertiary;
 }
 
 
@@ -115,7 +115,7 @@ p {
 }
 
 main {
-    padding: 150px 0;
+    padding: 20px 0 150px 0;
     width: 100%;
     background: center / cover no-repeat fixed url("../assets/pictures/site-bg.jpg");
 }
@@ -127,10 +127,43 @@ main {
     align-items: center;
     width: 90%;
     max-width: 1200px;
-    padding: 80px 30px 30px 30px;
+    margin: 150px auto 0 auto;
+    padding: 80px 80px 50px 80px;
     @include bg-gradient-lightblue;
     @include secondary-border;
     @include bs-darkblue();
+
+    &__inset {
+        font-size: 18px;
+        @include inset;
+        @include bg-gradient-darkblue;
+    }
+}
+
+.link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 20px;
+    padding: 0 5px;
+    color: $secondary;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $quaternary;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -3px;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -152,5 +185,17 @@ main {
 
     .section {
         padding-top: 60px;
+        width: 100%;
+        margin-top: 100px;
+
+        &__inset {
+            top: -41px;
+            width: 80px;
+            height: 80px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
     }
 }

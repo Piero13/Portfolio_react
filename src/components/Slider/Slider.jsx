@@ -3,8 +3,6 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from "swiper";
 import 'swiper/swiper-bundle.css';
 
 function Slider({slides}){
-    console.log(slides)
-
     return (
         <div id="slider" className="slider">
             <Swiper
@@ -26,7 +24,7 @@ function Slider({slides}){
                 }}
             >
                 {slides.map((slide) => (
-                    <SwiperSlide key={slide.src}>
+                    <SwiperSlide key={slide.source}>
                         <img className="sliderImg" src={slide.source} alt={slide.title}/>
                     </SwiperSlide>
                 ))}

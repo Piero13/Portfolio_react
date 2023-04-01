@@ -64,29 +64,6 @@
         padding: 0;
 
         & a {
-            position: relative;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0 20px;
-            padding: 0 5px;
-
-            &:after {
-                content: "";
-                position: absolute;
-                background-color: $quaternary;
-                height: 3px;
-                width: 0;
-                left: 0;
-                bottom: -3px;
-                transition: 0.3s;
-            }
-
-            &:hover {
-                &:after {
-                    width: 100%;
-                }
-            }
-
             &.active {
                 font-weight: 500;
                 position: relative;

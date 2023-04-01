@@ -1,0 +1,44 @@
+.timeline-element {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    color: $secondary;
+
+    &__date {
+        width: 40%;
+        text-align: end;
+        font-weight: bold;
+    }
+
+    &__icon {
+        font-size: 30px;
+        padding: 10px;
+        background-color: $tertiary;
+        border: 2px solid $secondary;
+        border-radius: 50%;
+        @include bs-darkblue;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        padding: 10px;
+        border: 2px solid $quaternary;
+        border-radius: 10px;
+        background-color: $tertiary;
+
+        & h3 {
+            font-size: 18px;
+        }
+
+        &__caret {
+            position: absolute;
+            left: -15px;
+        }
+    }
+}

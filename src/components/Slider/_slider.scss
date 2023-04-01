@@ -1,7 +1,7 @@
 .slider {
     width: 100%;
     height: auto;
-    padding: 30px 50px 50px 50px;
+    padding: 30px 30px 50px 30px;
 }
 
 #swiper {
@@ -15,6 +15,14 @@
 .swiper-button-prev,
 .swiper-button-next {
     color: $quaternary;
+}
+
+.swiper-button-prev {
+    margin-left: 10px;
+}
+
+.swiper-button-next {
+    margin-right: 10px;
 }
 
 .swiper-pagination-bullet-active {
