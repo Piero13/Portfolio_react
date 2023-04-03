@@ -38,7 +38,37 @@
 
         &__caret {
             position: absolute;
-            left: -15px;
+            left: -10px;
+            color: $quaternary;
+        }
+    }
+}
+
+/*responsive*/
+/*mobile*/
+
+@media #{$breakpoint-s} {
+    .timeline-element {
+        text-align: left;
+
+        &__date {
+            width: 38%;
+        }
+
+        &__icon {
+            font-size: 18px;
+        }
+
+        &__card {
+            width: 38%;
+
+            & h3 {
+                font-size: 16px;
+            }
+
+            & p {
+                width: 100%;
+            }
         }
     }
 }

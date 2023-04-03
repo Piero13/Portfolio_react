@@ -28,3 +28,12 @@
 .swiper-pagination-bullet-active {
     background: $quaternary;
 }
+
+/*responsive*/
+/*mobile*/
+
+@media #{$breakpoint-s} {
+    .slider {
+        padding: 30px 0 30px 0;
+    }
+}
