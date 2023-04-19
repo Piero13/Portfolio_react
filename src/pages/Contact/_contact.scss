@@ -55,6 +55,7 @@
 @media #{$breakpoint-s} {
     .form {
         flex-direction: column;
+        margin-top: 10px;
 
         &__div {
             width: 100%;
